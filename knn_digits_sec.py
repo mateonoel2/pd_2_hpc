@@ -49,4 +49,4 @@ for i, ax in enumerate(axes.flat):
     ax.axis("off")
 plt.suptitle("Sample Predictions (Sequential KNN)")
 plt.tight_layout()
-# plt.show()
+plt.show()
