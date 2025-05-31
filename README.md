@@ -7,24 +7,36 @@ discutido en clase (`knn_hpc_class_vis.py`). Es decir, debe incluir las
 directivas de comunicaci´on (`comm.bcast`, `comm.scatter`,
 `comm.gather`). (4pts)
 
-El algoritmo `knn_digits.py` cuenta con la implementación de un KNN en paralelo.
+El algoritmo `knn_digits_1.py` cuenta con la implementación de un KNN en paralelo.
 
 ```bash
 mpirun -n 4 python knn_digits.py
 ```
 
+output: 
 ```bash
+Accuracy: 0.9833
+Execution time (parallel): 0.2590 sec
+```
 
+## Ejercicio 2 (3pts)
 
+ - El código debe obtener los tiempos de ejecución, cómputo y
+comunicación, así como la precisión del modelo (accuracy).
+Realice las pruebas en Khipu. Incremente tanto procesos (p) como
+datos (n). Ya que los datos importados (dígitos) tienen un tamaño
+constante, se recomienda multiplicar la data para medir escalabilidad
+o usar `from sklearn.datasets import make_classification` para generar
+data variada
 
+Corremos el sigiente script: ``knn_digits_2.sh`` con el objetivo de crear el archivo `knn_benchmark_results.csv`
 
+finalmente corremos `generate_chart.py` para generar los  siguientes gráficos donde podemos ver a detalle los resultados de los experimentos.
 
+### Resultados de los Experimentos
 
+#### Análisis de Datos Sintéticos
+![Análisis de Datos Sintéticos](images/synthetic_data_analysis.png)
 
-
-
-
-
-
-
-
+#### Análisis de Datos Reales
+![Análisis de Datos Reales](images/real_data_analysis.png)
