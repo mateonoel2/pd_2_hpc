@@ -31,10 +31,10 @@ data variada
 
 Corremos el sigiente script: ``knn_digits_2.sh`` con el objetivo de crear el archivo `knn_benchmark_results.csv`
 
-finalmente corremos `generate_chart.py` para generar los  siguientes gráficos donde podemos ver a detalle los resultados de estos  experimentos.
+finalmente corremos `generate_chart_2.py` para generar los  siguientes gráficos donde podemos ver a detalle los resultados de estos  experimentos.
 
 #### Análisis de Datos Sintéticos
-![Análisis de Datos Sintéticos](images/synthetic_data_analysis.png)
+![Análisis de Datos Sintéticos](ejercicio_2/images/synthetic_data_analysis.png)
 
 #### Análisis de Datos Reales
-![Análisis de Datos Reales](images/real_data_analysis.png)
+![Análisis de Datos Reales](ejercicio_2/images/real_data_analysis.png)
