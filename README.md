@@ -7,10 +7,10 @@ discutido en clase (`knn_hpc_class_vis.py`). Es decir, debe incluir las
 directivas de comunicaci´on (`comm.bcast`, `comm.scatter`,
 `comm.gather`). (4pts)
 
-El algoritmo `knn_digits_1.py` cuenta con la implementación de un KNN en paralelo.
+El algoritmo `ejercicio_1/knn_digits.py` cuenta con la implementación de un KNN en paralelo.
 
 ```bash
-mpirun -n 4 python knn_digits.py
+mpirun -n 4 python ejercicio_1/knn_digits.py
 ```
 
 output: 
@@ -29,9 +29,9 @@ constante, se recomienda multiplicar la data para medir escalabilidad
 o usar `from sklearn.datasets import make_classification` para generar
 data variada
 
-Corremos el sigiente script: ``knn_digits_2.sh`` con el objetivo de crear el archivo `knn_benchmark_results.csv`
+Corremos el sigiente script: ``ejercicio_2/run_benchmark.sh`` con el objetivo de crear el archivo `ejercicio_2/knn_benchmark_results.csv`
 
-finalmente corremos `generate_chart_2.py` para generar los  siguientes gráficos donde podemos ver a detalle los resultados de estos  experimentos.
+finalmente corremos `ejercicio_2/generate_chart.py` para generar los  siguientes gráficos donde podemos ver a detalle los resultados de estos  experimentos.
 
 #### Análisis de Datos Sintéticos
 ![Análisis de Datos Sintéticos](ejercicio_2/images/synthetic_data_analysis.png)
