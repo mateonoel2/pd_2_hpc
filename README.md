@@ -33,3 +33,4 @@ finalmente corremos `ejercicio_2/generate_chart.py` para generar los  siguientes
 ## Ejercicio 3 (4pts)
 
 - Derive la gráfica de speedup de los datos anteriores y genere una gráfica de FLOPs vs. p (FLOP por segundo) y analice el comportamiento del modelo en función a n creciente. Obtenga los FLOP de la región paralelizable (entrenamiento), basada en la fórmula de la distancia entre dos puntos. Indique la relación entre speedup y FLOPs 
+
