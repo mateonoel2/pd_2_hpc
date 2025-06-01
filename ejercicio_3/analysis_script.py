@@ -67,7 +67,7 @@ def create_speedup_analysis(df):
         markersize=6,
     )
     ax1.plot(
-        processes, df["actual_speedup"], "b-", linewidth=2, label="Actual Speedup", marker="s", markersize=6
+        processes, df["speedup"], "b-", linewidth=2, label="Actual Speedup", marker="s", markersize=6
     )
 
     ax1.set_xlabel("Number of Processes (p)")
@@ -78,7 +78,7 @@ def create_speedup_analysis(df):
     ax1.set_xticks(processes)
 
     # Add speedup values as annotations
-    for i, (p, speedup) in enumerate(zip(processes, df["actual_speedup"])):
+    for i, (p, speedup) in enumerate(zip(processes, df["speedup"])):
         ax1.annotate(
             f"{speedup:.2f}x",
             (p, speedup),
