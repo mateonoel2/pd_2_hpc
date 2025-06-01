@@ -1,4 +1,4 @@
-# Tarea 3 - Paralelización de KNN
+# Práctica dirigida 2 - Paralelización de KNN
 
 ## Ejercicio 1 (4pts)
 
