@@ -34,3 +34,11 @@ finalmente corremos `ejercicio_2/generate_chart.py` para generar los  siguientes
 
 - Derive la gráfica de speedup de los datos anteriores y genere una gráfica de FLOPs vs. p (FLOP por segundo) y analice el comportamiento del modelo en función a n creciente. Obtenga los FLOP de la región paralelizable (entrenamiento), basada en la fórmula de la distancia entre dos puntos. Indique la relación entre speedup y FLOPs 
 
+Para analizar el comportamiento del modelo KNN en paralelo, se ha creado un script de análisis completo en `ejercicio_3/analysis_script.py`. Este script realiza un análisis detallado de:
+
+1. Speedup y eficiencia paralela
+2. Análisis de FLOP/s
+3. Desglose de tiempos de cómputo vs comunicación
+4. Análisis de balance de carga
+
+
